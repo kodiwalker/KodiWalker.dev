@@ -1,0 +1,242 @@
+/**
+ * 
+ * Based on Josh Comeau's CSS Reset: https://www.joshwcomeau.com/css/custom-css-reset/.
+ * 
+ * Feel free to edit this file as needed.
+ * 
+ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #2C3333;
+  color: whitesmoke;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+ul {
+  padding: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  border: none;
+  border-radius: 9px;
+  color: white;
+  background-color: #0E8388;
+  padding: 0.5rem 0.5rem;
+}
+
+button:hover {
+  background-color: #2E4F4F;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 840px;
+  padding: 1rem 1rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#modal-wrapper.fade-out {
+  opacity: 0;
+  transition: opacity 400ms ease-out;
+}
+
+#modal-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  animation: fadeIn 500ms ease-out;
+  z-index: 1000;
+}
+
+#modal {
+  min-width: 355px;
+  max-width: max-content;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  color: black;
+  background-color: whitesmoke;
+  box-shadow: -2px 2px 10px 1px rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  height: 385px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  height: 85%;
+
+}
+
+#buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 0.8rem;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.two-inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  max-width: 780px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2% 5%;
+}
+
+header img {
+  width: 80px;
+}
+
+
+#logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+
+}
+
+
+/*^------------------- Cart Styling --------------------- */
+
+#root h3 {
+  padding: 2% 0;
+}
+
+#checkout-btn {
+  margin-top: 1rem;
+}
+
+#cart-items {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.cart-item {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 840px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.cart-item img {
+  width: 20%;
+  border-radius: 10px;
+}
+
+.item-desc {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem;
+  width: 100%;
+}
+
+#total {
+  display: flex;
+  width: 100%;
+  justify-content: end;
+}
+
+#modal p {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

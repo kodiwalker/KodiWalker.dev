@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import React, { useState } from "react";
 import { createRoot } from 'react-dom/client';
 import { createPortal } from "react-dom";
 import Modal from "./modal.jsx";
@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <h3><i class="fa-solid fa-basket-shopping fa-xl"></i></h3>
+      <h3><i className="fa-solid fa-basket-shopping fa-xl"></i></h3>
       <ul id="cart-items">
         <li className="cart-item">
           <img src="/img/ring.jpg" alt="" />

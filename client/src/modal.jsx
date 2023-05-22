@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 import F1 from "./components/f1.jsx";
 import F2 from "./components/f2.jsx";
